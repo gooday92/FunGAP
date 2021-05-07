@@ -35,7 +35,7 @@ docker build -t fungap .
 1. Enter into a docker container of fungap:
 
     ```bash
-    docker run -it -w /fungap_workspace --rm -v $(pwd):/fungap_workspace fungap bash
+    docker run -it -w /fungap_workspace --rm -v $(pwd):/fungap_workspace --privileged=true fungap bash
     ```
 
 1. Go to `/fungap_workspace` and use helper script to get Augustus species.
